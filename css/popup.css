@@ -1,0 +1,212 @@
+:root{
+  --bg: #FAF0E6;
+  --ink: #0a0a0a;
+  --muted: rgba(10,10,10,.65);
+  --line: rgba(10,10,10,.10);
+  --card: rgba(255,255,255,.90);
+  --shadow: 0 30px 90px rgba(0,0,0,.22);
+  --radius: 22px;
+  --accent: #edad63;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{
+  font-family: "Poppins", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* ===== demo page ===== */
+.demo{
+  min-height: 100vh;
+  padding: 80px 18px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.demo h1{
+  font-size: 46px;
+  letter-spacing: .4px;
+}
+.demo p{
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* cards */
+.cards{
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card{
+  background: rgba(255,255,255,.72);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  font-weight: 900;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,.10);
+}
+
+/* ===== popup base ===== */
+.popup{
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+}
+
+/* :target で表示（JSなしでも開く） */
+.popup:target{
+  display: block;
+}
+
+/* backdrop */
+.popup__backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.38);
+  backdrop-filter: blur(7px);
+}
+
+/* panel */
+.popup__panel{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(1120px, 92vw);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+/* close button */
+.popup__close{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.08);
+  color: var(--ink);
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  font-size: 26px;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.popup__content{
+  display: grid;
+  grid-template-columns: 420px 1fr;
+}
+
+/* image */
+.popup__media{
+  background: rgba(0,0,0,.03);
+}
+.popup__media img{
+  width: 100%;
+  height: 100%;
+  max-height: 560px;
+  object-fit: cover;
+  display: block;
+}
+
+/* body */
+.popup__body{
+  padding: 26px 24px 20px;
+  max-height: 560px;  /* 長文でも崩れないように */
+  overflow: auto;
+}
+
+.popup__badge{
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(237,173,99,.35);
+  border: 1px solid rgba(237,173,99,.6);
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.popup__title{
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.popup__desc{
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+/* synopsis section */
+.popup__section{
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0,0,0,.10);
+}
+
+.popup__sectionTitle{
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.popup__synopsis{
+  color: rgba(10,10,10,.70);
+  line-height: 1.85;
+  font-size: 14px;
+}
+
+/* actions */
+.popup__actions{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 11px 14px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 900;
+  border: 1px solid transparent;
+}
+
+.btn--primary{
+  background: var(--ink);
+  color: #fff;
+}
+.btn--ghost{
+  background: rgba(255,255,255,.75);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .cards{ grid-template-columns: 1fr; }
+  .popup__content{ grid-template-columns: 1fr; }
+  .popup__media img{ max-height: 260px; }
+  .popup__body{ max-height: 60vh; }
+}
+

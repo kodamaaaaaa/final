@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="css/my_page.css"/>
+  <link rel="stylesheet" href="css/footer_index.css">
+  <link rel="stylesheet" href="css/lending_history_box.css" />
+  <title>my_Page</title>
+</head>
+
+
+
+<body>
+  <img src="nature/シダ7.png" class="header-bg" alt="">
+  <img src="images/panda3.png" class="panda-bg3" alt="">
+  <img src="images/panda5.png" class="panda-bg4" alt="">
+
+  <main class="shell">
+        <nav class="contain_1">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="https://www.google.com/" class="c_logo" target="_blank" rel="noopener noreferrer">
+            <img src="images/9683585.png" alt="Google">
+          </a>
+        </div>
+
+        <div class="nav__btns">
+          <button class="btn" type="button" aria-label="Home">
+            <a href="main.html" class="ME_logo">
+              <img src="images/571-5714205_home-button-home-button-transparent-svg-hd-png.png" alt="ME">
+            </a>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <h1 class="shell-title">History</h1>
+
+  <div class="all-card">
+    <section class="card">
+      <header class="card-head">
+        <div>
+          <h2 class="card-title">Lending History</h2>
+        </div>
+      </header>
+
+      <div class="divider"></div>
+
+      <section class="block">
+        <div class="block-head">
+          <h3 class="block-title">Lending</h3>
+          <div class="block-note">over deadline / approach deadline / lending</div>
+        </div>
+
+        <div class="triple">
+          <article class="panel">
+            <div class="panel-head">
+              <div class="panel-title">Over deadline</div>
+              <span class="pill pill-danger" id="cntOver">0</span>
+            </div>
+            <div class="panel-body" id="listOver"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div class="panel-title">Approach deadline</div>
+              <span class="pill pill-warn" id="cntApproach">0</span>
+            </div>
+            <div class="panel-body" id="listApproach"></div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-head">
+              <div class="panel-title">Lending</div>
+              <span class="pill" id="cntLending">0</span>
+            </div>
+            <div class="panel-body" id="listLending"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-head">
+          <h3 class="block-title">Returned</h3>
+          <div class="block-note">Borrowed / Returned / Title</div>
+        </div>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div class="panel-title">History list</div>
+            <span class="pill" id="cntReturned">0</span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Borrowed</th>
+                  <th>Returned</th>
+                  <th>Title</th>
+                </tr>
+              </thead>
+              <tbody id="tbodyReturned"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+    </section>
+  </div>
+  </main>
+  
+  <footer class="g-footer">
+    <span class="g-footer__text">@Google Training Project</span>
+  </footer>
+
+  <script src="js/lending_history_box.js"></script>
+</body>
+</html>

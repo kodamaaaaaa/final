@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/for_fav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>library_homepage2</title>
+  </head>
+
+  <body bgcolor = '#FAF0E6'>
+     
+  <id class="page_1_contain">
+    <img src="nature/シダ7.png" class="header-bg" alt="">
+    <img src="images/Google_2015_logo.svg.webp" class="search-logo" alt="">
+    <img src="images/giphy (1).webp" class="book_read" alt="">
+    <div class="search-area">
+      <form class="search-bar" id="search-form" autocomplete="off">
+        <i class="ri-search-line"></i>
+        <input id="q" type="text" placeholder="Find by Book Title or Tag" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="search-results" id="list"></div>
+
+      <div class="search-empty" id="empty" hidden>
+        Empty
+      </div>
+    </div>
+
+    <nav class = "contain_1">
+       <div class="nav__header">
+         <div class="nav__logo">
+           <a href="https://www.google.com/" class="c_logo" target="_blank" rel="noopener noreferrer">
+             <img src="images/9683585.png" class="bookG_logo" alt="Google">
+           </a>
+         </div>
+         <div class="nav__menu__btn" id="menu-btn">
+           <i class="ri-menu-line"></i>
+         </div>
+       </div> 
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home" class="home_logo">HOME</a></li>
+          <li><a href="#page_2_contain" class="arrival_logo">ARRIVAL</a></li>
+          <li><a href="index.html" class="logout_logo">LOGOUT</a></li>
+
+        </ul>
+        <div class="nav__btns" id="home">
+          <button class="btn">
+            <a href="my_page1-2.html" class="ME_logo">
+              <img src="images/girl_aicon.png" alt="ME">
+            </a>
+          </button>
+        </div>
+    </nav>
+   </id>
+
+    <id class="page_2_contain" id="page_2_contain">
+      
+       <div class = "contain_1">
+        <section class="recommend-section">
+          <div class="latest-bg"></div> 
+            <div class = "latest-wrap">
+              <h2 class="recommend-title">Latest Books</h2>
+              <div class="marquee-card">
+                <div class="marquee">
+                  <div class="track">
+                    <a class="item" href="#book-popup"
+                      data-synopsis="本書はJavaScriptの基礎から応用までを体系的に解説した入門書である。変数、関数、DOM操作、非同期処理など、実務で必要な知識を段階的に学べる構成となっている。初心者でも理解しやすい例題が豊富に掲載されており、Web開発の基礎力を確実に身につけることができる。">
+                      <img src="images/book1.jpg" alt="java script">
+                      <div class="meta">
+                        <div class="name">Java Script</div>
+                        <div class="desc">JavaScriptを学ぶための教科書</div>
+                      </div>
+                    </a>
+
+                    <a class="item" href="#book-popup"
+                      data-synopsis="JavaScriptが「わかる」から「使える」へとステップアップ！開発に必要なコードを自分で考え、自分で書けるようになるための、JavaScriptの知識と技術を1冊に凝縮！ 明快でスラスラ読めるテキストと豊富なサンプルで、初心者の基礎固めから経験者のスキルアップまで、楽しく学習できる！">
+                      <img src="images/book2.jpg" alt="java script">
+                      <div class="meta">
+                        <div class="name">Java Script</div>
+                        <div class="desc">膨大な情報量で本質を理解
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="item" href="#book-popup"
+                      data-synopsis="『新・明解C言語 入門編』の柴田望洋が贈る、最も明解で最も平易なJava解説書。たくさんの図表と、サンプルプログラムを使って、Javaの基礎から、オブジェクト指向プログラミングの本質を、わかりやすく解き明かす。また、今回の改訂要素として、新章「例外処理」が加わります。著書一流のていねいな解説により、初めてプログラミングを学ぶ人、他の入門書ではマスターできなかった人、本当にJavaをマスターしたい人など、すべてのJavaユーザにとって、最良の1冊!">
+                      <img src="images/book3.jpg" alt="java">
+                      <div class="meta">
+                        <div class="name">Java</div>
+                        <div class="desc">Java入門書の最高峰
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="item" href="#book-popup"
+                      data-synopsis="「基礎力不足はわかっているけど、何から手をつければいいかわからない! 」という人のためのベストセラー書籍が、新形式に完全対応!　よりわかりやすく、より実践的な内容で、英語の基礎力とスコアを同時にアップさせます。">
+                      <img src="images/book4.jpg" alt="TOEIC">
+                      <div class="meta">
+                        <div class="name">TOEIC</div>
+                        <div class="desc">中学生レベルからスタート
+                        </div>
+                      </div>
+                    </a>
+
+                    <a class="item" href="#book-popup"
+                      data-synopsis="ビジネスパーソンのための教養シリーズ第1弾。NHKの哲学番組『世界の哲学者に人生相談』の解説も務める小川先生による哲学案内。哲学史の定番に加えて、現代社会の諸問題を取り扱う時代思想も紹介する、これぞ「生きた哲学」に手軽に触れられる1冊。">
+                      <img src="images/book5.jpg" alt="Philosophy">
+                      <div class="meta">
+                        <div class="name">Philosophy</div>
+                        <div class="desc">ビジネスで役立つ哲学
+                        </div>
+                      </div>
+                    </a>                  
+
+                    <a class="item" href="#book-popup"
+                      data-synopsis="子どもに料理をつくる経験を積ませたいと考える親御さんが、増えています。将来役立つ技術が身に着くばかりでなく、食材についての知識を深めたり、「食べる」ことについて考えるきっかけになったり。そして、人と人とを結ぶコミュニケーションツールにもなり得る料理。その力に、多くの大人たちが気づきはじめているようです。そんな需要にも応える本書は、小学校低学年のお子さんから使える、子どものための料理本です。掲載料理は53品。どれも大人が食べてもおいしいものばかりです。料理をつくってくれたのは4人のシェフたち。テレビや学校、料理教室、そして自身の子どもたちに料理を教えた経験が本書にも活かされています。">
+                      <img src="images/book6.jpg" alt="Cooking">
+                      <div class="meta">
+                        <div class="name">Cooking</div>
+                        <div class="desc">子供のための料理本
+                        </div>
+                      </div>
+                    </a>                              
+
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </id>
+
+    <section class="popup" id="book-popup" aria-hidden="true">
+      <a class="popup__backdrop" href="#" aria-label="Close"></a>
+
+      <div class="popup__panel" role="dialog" aria-modal="true">
+        <a class="popup__close" href="#" aria-label="Close">×</a>
+
+        <div class="popup__content">
+          <div class="popup__media">
+            <img id="popupImg" src="" alt="book" />
+          </div>
+
+          <div class="popup__body">
+            <div class="popup__badge">Latest Book</div>
+
+            <h2 class="popup__title" id="popupTitle">Title</h2>
+            <p class="popup__desc" id="popupDesc">Explanation</p>
+
+            <div class="popup__section">
+              <h3 class="popup__sectionTitle">Overview</h3>
+              <p class="popup__synopsis" id="popupSynopsis">
+              </p>
+            </div>
+            <div class="fav-area">
+              <button class="btn ghost fav-btn" id="favBtn" type="button" aria-pressed="false">
+                <span class="star">☆</span> Favorite
+              </button>
+              <div class="fav-toast" id="toast" role="status" aria-live="polite"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="fav-toast" id="toast" role="status" aria-live="polite"></div>
+    </section>
+
+
+
+
+    <div class="page_4_contain">
+
+    </div>
+    <footer class="g-footer">
+      <span class="g-footer__text">@Google Training Project</span>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app2.js"></script>  
+    <script src="js/for_fav.js"></script>
+
+  </body>
+</html>

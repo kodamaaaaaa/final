@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>library_login</title>
+  <meta charset = "UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="css/style_file.css">
+  <link rel="stylesheet" href="css/footer_index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <img class="wave" src="images/1600w-GyLQ4rd9Hig.webp" alt="">
+
+  <header></header>
+
+  <div class="container">
+    <div class="img">
+      <img src="images/giphy.gif" alt="">
+    </div>
+
+    <div class="login-content">
+      <form action="index.html">
+        <a href="https://www.google.com/" class = "c_logo" target="_blank" rel="noopener noreferrer">
+           <img src="images/Google_2015_logo.svg.webp" alt="">
+        </a>
+
+        <h2 class="title"></h2>
+
+        <div class="input-div one">
+          <div class="i">
+            <i class="f"></i>
+          </div>
+          <div class="div">
+            <input type="text" name="ID" placeholder="ID" id="idText" class="input" required>
+          </div>
+        </div>
+
+        <div class="input-div pass">
+
+          <div class="i">
+            <i class="fas fa-lock"></i>
+          </div>
+
+          <div class="div">
+            <input type="password" name="Password" placeholder="Password" id="passText" class="input" required>
+          </div>
+
+          <button type="button" class="pw-toggle" aria-label="Show password" aria-pressed="true">
+            <i class="fas fa-eye-slash"></i>
+          </button>
+        </div>
+
+        <div class="forget">
+          <a href="#" class = "signup">Forgot Password?</a>
+        </div>
+
+        <input type="button" class="btn" onclick="nextPage()" value="Login">
+
+        <div class="account">
+          <p>Don't have an account?</p>
+        </div>
+
+        <div class="sign">
+          <a href="#" class="signup-trigger">Sign up</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <footer class="g-footer">
+    <span class="g-footer__text">@Google Training Project</span>
+  </footer>
+
+<script>
+    !function (t, e, c, n) {
+        var s = e.createElement(c);
+        s.async = 1, s.src = 'https://scripts.claspo.io/scripts/' + n + '.js';
+        var r = e.scripts[0];
+        r.parentNode.insertBefore(s, r);
+        var f = function () {
+            f.c(arguments);
+        };
+        f.q = [];
+        f.c = function () {
+            f.q.push(arguments);
+        };
+        t['claspo'] = t['claspo'] || f;
+    }(window, document, 'script', 'D85AF6F680794C658CC18CF808E79688');
+</script><script>claspo('init');</script>
+
+  <script>
+    const signup = document.querySelector(".signup-trigger");
+    if (signup) {
+      signup.addEventListener("click", (e) => {
+        e.preventDefault();
+
+      });
+    }
+  </script>
+  <script src="js/eye.js"></script>
+  <script src="js/login.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

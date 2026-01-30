@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+  <link rel="stylesheet" href="css/book.css" />
+  <link rel="stylesheet" href="css/footer.css">
+  <title>book_9</title>
+</head>
+
+<body>
+  <!-- header -->
+  <id class="page_1_contain">
+    <img src="nature/シダ7.png" class="header-bg" alt="">
+    <img src="images/Google_2015_logo.svg.webp" class="search-logo" alt="">
+    <div class="search-area">
+      <form class="search-bar" id="search-form" autocomplete="off">
+        <i class="ri-search-line"></i>
+        <input id="q" type="text" placeholder="Find by Book Title or Tag" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="search-results" id="list"></div>
+
+      <div class="search-empty" id="empty" hidden>
+        Empty
+      </div>
+    </div>
+    <nav class = "contain_1">
+        <div class="nav__header">
+        <div class="nav__logo">
+          <a href="https://www.google.com/" class="c_logo" target="_blank" rel="noopener noreferrer">
+            <img src="images/9683585.png" class="bookG_logo" alt="Google">
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div> 
+        <ul class="nav__links" id="nav-links">
+
+          <li><a href="main.html" class="home_logo">HOME</a></li>
+
+
+        </ul>
+        <div class="nav__btns">
+          <button class="btn">
+            <a href="my_page.html" class="ME_logo">
+              <img src="images/9DFluyAPmT.png" alt="ME">
+            </a>
+          </button>
+        </div>
+    </nav>
+   </id>
+  </div>
+
+
+  <!-- rounded background box -->
+  <div class="place" id="book">
+    <img class="page_bg" src="images/lakeside-sunrise-early-morning-minimal-art-gradient-3840x2160-4587.png" alt="">
+
+
+    <main class="content-wrap">
+
+      <!-- book hero -->
+      <section class="hero">
+        <div class="cover">
+          <img src="images/book_6.webp" alt="" />
+        </div>
+
+        <div class="info">
+          <div class="badge">General Book</div>
+          <h1 class="title">一汁三菜</h1>
+          <p class="subtitle">おぼん献立</p>
+
+          <div class="meta">
+            <div class="meta-item"><span>Category :</span><b> Cooking</b></div>
+            <div class="meta-item"><span>Difficalty :</span><b> Normal</b></div>
+            <div class="meta-item"><span>Stock :</span><b id="stockText" data-stock="5">  5</b></div>
+            <div class="meta-item"><b>#cooking #recipe book #Japanese food</b></div>
+          </div>
+
+          <div class="actions">
+            <button class="btn primary" id="reserveBtn" type="button">Reserve</button>
+            <button class="btn ghost fav-btn" id="favBtn" type="button" aria-pressed="false">
+              <span class="star">☆</span> Favorite
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- overview -->
+      <section class="panel">
+        <h2>Overview</h2>
+        <p>
+           SNSでも人気の著者が提案する、日々の献立に取り入れやすい「一汁三菜」レシピを手に入りやすい材料で、特別な調味料に頼らずに作れるシンプルなレシピを紹介する。おぼんを使って全体の色合いや配置をこだわるとカフェ風になって見た目も楽しくなる。読者の食卓に笑顔が生まれ、日々の生活がより豊かになることを願って作られた一冊である。
+        </p>
+      </section>
+
+    </main>
+
+    <!-- modal -->
+    <div class="modal" id="reserveModal" aria-hidden="true">
+      <div class="modal__backdrop" data-close="1"></div>
+      <div class="modal__panel" role="dialog" aria-modal="true">
+        <button class="modal__close" type="button" data-close="1">×</button>
+        <h3 class="modal__title">Do you want to reserve this book?</h3>
+        <p class="modal__text">Reserving 「一汁三菜」Confirm?</p>
+        <div class="modal__actions">
+          <button class="btn ghost" type="button" data-close="1">Quit</button>
+          <button class="btn primary" type="button" id="confirmReserve">Reserve</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+  </div>
+  <footer class="g-footer2">
+    <span class="g-footer__text">@Google Training Project</span>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/book.js"></script>
+
+</body>
+</html>

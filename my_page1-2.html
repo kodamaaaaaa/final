@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="css/my_page.css"/>
+  <link rel="stylesheet" href="css/footer_index.css">
+  <title>my_Page2</title>
+</head>
+
+<body>
+  <img src="nature/シダ7.png" class="header-bg" alt="">
+  <img src="images/panda.png" class="panda-bg" alt="">
+  <img src="images/panda2.png" class="panda-bg2" alt="">
+
+  <main class="big-box">
+    <nav class="contain_1">
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="https://www.google.com/" class="c_logo" target="_blank" rel="noopener noreferrer">
+            <img src="images/9683585.png" alt="Google">
+          </a>
+        </div>
+
+        <div class="nav__btns">
+          <button class="btn" type="button" aria-label="Home">
+            <a href="main1-2.html" class="ME_logo">
+              <img src="images/571-5714205_home-button-home-button-transparent-svg-hd-png.png" alt="ME">
+            </a>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="big-title">My Page</h1>
+
+    <section class="inner-card">
+      <div class="card-head">
+        <div class="mini-title">Account</div>
+        <div class="head-actions">
+          <button id="editBtn" class="btn ghost" type="button">Edit</button>
+          <button id="saveBtn" class="btn primary" type="button" disabled>Save</button>
+        </div>
+      </div>
+
+      <form class="my-form" id="myForm" autocomplete="off">
+
+        <div class="row editable" id="row-username">
+          <div class="row-head">
+            <label for="username">User Name</label>
+            <span class="edit-badge">🖋</span>
+          </div>
+          <input id="username" type="text" value="hanako" disabled>
+        </div>
+
+        <div class="row">
+          <label for="empid">ID</label>
+          <input id="empid" name="empid" type="text" value="2222" disabled>
+        </div>
+
+        <div class="row">
+          <label for="fullname">Name</label>
+          <input id="fullname" name="fullname" type="text" value="齋藤 花子" disabled>
+        </div>
+
+        <div class="row editable" id="row-password">
+          <div class="row-head">
+            <label for="password">Password</label>
+            <span class="edit-badge">🖋</span>
+          </div>
+          <div class="pw-wrap">
+            <input id="password" type="password" value="23232323" disabled>
+            <button id="togglePw" type="button" class="pw-toggle" aria-pressed="false">
+              <i class="fas fa-eye-slash"></i>
+            </button>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <label>History</label>
+          <div class="history-box">
+            <div class="history-text">Display a list of past rentals</div>
+            <a class="btn primary" href="history1-2.html">View History</a>
+          </div>
+        </div>
+
+        <div class="footer-actions">
+          <button id="editBtn2" class="btn ghost" type="button">Edit</button>
+          <button id="saveBtn2" class="btn primary" type="button" disabled>Save</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <div id="pwToast" class="toast" aria-live="polite"></div>
+
+  <footer class="g-footer">
+    <span class="g-footer__text">@Google Training Project</span>
+  </footer>
+
+  <script src="js/my_page.js"></script>
+</body>
+</html>
